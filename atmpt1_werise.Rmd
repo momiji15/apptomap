@@ -4,6 +4,7 @@ output: html_notebook
 ---
 
 <h1>App to Map Tutorial Part 1: Collecting Tweets using the REST API</h1>
+
 In order to do a one-time collection of tweets, you will need to access Twitter's REST API.  The name of the  R package that you have to download and load in order to access the REST API is the <a href = "https://cran.r-project.org/web/packages/twitteR/twitteR.pdf">TwitteR</a> package created by Jeff Gentry. You will also have to create a Twitter app in order to access the REST API. If you haven't already made one, go to <a href = "apps.twitter.com">apps.twitter.com</a> and create an app. You will need the Consumer Key (API Key), Consumer Secret (API Secret), Access Token, and Access Token Secret.
 
 <h3>Tutorial Objectives:</h3>
