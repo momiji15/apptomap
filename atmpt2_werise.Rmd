@@ -46,8 +46,7 @@ leaflet(mymap) %>%
 
 <b>5. Click "Run." </b>
 
-<b>6. When you run your code, a web browser should pop-up and display your map. Here is a map of some tweets    that I collected.</b>
-      
+<b>6. When you run your code, a web browser should pop-up and display your map. 
     
 ![Alt text](C:/Users/Dorris/Documents/ApptoMap/ATM/leafletmap.jpg)
 
