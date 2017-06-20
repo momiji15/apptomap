@@ -184,32 +184,38 @@ Instructions
 <p><b>2. Install and load the twitteR package.</b></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjpbImluc3RhbGwucGFja2FnZXMoXCJ0d2l0dGVSXCIpIiwibGlicmFyeSh0d2l0dGVSKSJdfQ== -->
+<pre class="r"><code>install.packages(&quot;twitteR&quot;)
+library(twitteR)</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><b>3. Next, you will need to enter your API key, API secret, token, and token secret.</b></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuYXBpX2tleSA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgQVBJIGtleSBcbmFwaV9zZWNyZXQgPC0gJycgI2luIHRoZSBxdW90ZXMsIHB1dCB5b3VyIEFQSSBzZWNyZXQgXG50b2tlbiA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgdG9rZW4gXG50b2tlbl9zZWNyZXQgPC0gJycgI2luIHRoZSBxdW90ZXMsIHB1dCB5b3VyIHRva2VuIHNlY3JldFxuXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r api_key &lt;- ‘’ #in the quotes, put your API key api_secret &lt;-’‘#in the quotes, put your API secret token &lt;-’‘#in the quotes, put your token token_secret &lt;-’’ #in the quotes, put your token secret</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjpbImFwaV9rZXkgPC0gJycgI2luIHRoZSBxdW90ZXMsIHB1dCB5b3VyIEFQSSBrZXkgIiwiYXBpX3NlY3JldCA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgQVBJIHNlY3JldCAiLCJ0b2tlbiA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgdG9rZW4gIiwidG9rZW5fc2VjcmV0IDwtICcnICNpbiB0aGUgcXVvdGVzLCBwdXQgeW91ciB0b2tlbiBzZWNyZXQiXX0= -->
+<pre class="r"><code>api_key &lt;- '' #in the quotes, put your API key 
+api_secret &lt;- '' #in the quotes, put your API secret 
+token &lt;- '' #in the quotes, put your token 
+token_secret &lt;- '' #in the quotes, put your token secret</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><b>4. You will need to connect to Twitter to access the REST API.</b></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuc2V0dXBfdHdpdHRlcl9vYXV0aChhcGlfa2V5LCBhcGlfc2VjcmV0LCB0b2tlbiwgdG9rZW5fc2VjcmV0KVxuXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r setup_twitter_oauth(api_key, api_secret, token, token_secret)</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoic2V0dXBfdHdpdHRlcl9vYXV0aChhcGlfa2V5LCBhcGlfc2VjcmV0LCB0b2tlbiwgdG9rZW5fc2VjcmV0KSJ9 -->
+<pre class="r"><code>setup_twitter_oauth(api_key, api_secret, token, token_secret)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><b>5. Time to do a Twitter search! Let’s do a Twitter search of tweets about national parks:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxudHdlZXRzIDwtIHNlYXJjaFR3aXR0ZXIoJ0BZZWxsb3dzdG9uZU5QUyBPUiAjWWVsbG93c3RvbmVOYXRpb25hbFBhcmsgT1IgWWVsbG93c3RvbmUgTmF0aW9uYWwgUGFyayBPUlxuIEBHcmFuZENhbnlvbk5QUyBPUiAjR3JhbmRDYW55b24gT1IgR3JhbmQgQ2FueW9uIE9SIEBTaGVuYW5kb2FoTlBTIE9SIFNoZW5hbmRvYWhOYXRpb25hbFBhcmtcbiBPUiBTaGVuYW5kb2FoIE5hdGlvbmFsIFBhcmsnLCBuID0gMjAwLCBsYW5nID0gJ2VuJylcbmBgYFxuYGBgIn0= -->
-<p><code>r</code>r tweets &lt;- searchTwitter(<a href="mailto:'@YellowstoneNPS">'@YellowstoneNPS</a> OR #YellowstoneNationalPark OR Yellowstone National Park OR <span class="citation">@GrandCanyonNPS</span> OR #GrandCanyon OR Grand Canyon OR <span class="citation">@ShenandoahNPS</span> OR ShenandoahNationalPark OR Shenandoah National Park’, n = 200, lang = ‘en’)</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjpbInR3ZWV0cyA8LSBzZWFyY2hUd2l0dGVyKCdAWWVsbG93c3RvbmVOUFMgT1IgI1llbGxvd3N0b25lTmF0aW9uYWxQYXJrIE9SIFllbGxvd3N0b25lIE5hdGlvbmFsIFBhcmsgT1IiLCIgQEdyYW5kQ2FueW9uTlBTIE9SICNHcmFuZENhbnlvbiBPUiBHcmFuZCBDYW55b24gT1IgQFNoZW5hbmRvYWhOUFMgT1IgU2hlbmFuZG9haE5hdGlvbmFsUGFyayIsIiBPUiBTaGVuYW5kb2FoIE5hdGlvbmFsIFBhcmsnLCBuID0gMjAwLCBsYW5nID0gJ2VuJykiXX0= -->
+<pre class="r"><code>tweets &lt;- searchTwitter('@YellowstoneNPS OR #YellowstoneNationalPark OR Yellowstone National Park OR
+ @GrandCanyonNPS OR #GrandCanyon OR Grand Canyon OR @ShenandoahNPS OR ShenandoahNationalPark
+ OR Shenandoah National Park', n = 200, lang = 'en')</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -217,25 +223,23 @@ Instructions
 <p><b>8. After you have done your Twitter search, you want to save your results in a data frame.</b></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxudHdlZXRzLmRmIDwtdHdMaXN0VG9ERih0d2VldHMpXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r tweets.df &lt;-twListToDF(tweets)</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoidHdlZXRzLmRmIDwtdHdMaXN0VG9ERih0d2VldHMpIn0= -->
+<pre class="r"><code>tweets.df &lt;-twListToDF(tweets)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><b>9. Your search results can be transferred from a data frame to a csv format so you can view in Excel.</b></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxud3JpdGUuY3N2KHR3ZWV0cy5kZiwgJ0M6L015RG9jdW1lbnRzL1R3aXR0ZXJEYXRhJykgI2V4YW1wbGUgZmlsZSBleHRlbnNpb24uIEFkZCB5b3VyIG93biFcbmBgYFxuYGBgIn0= -->
-<p><code>r</code>r write.csv(tweets.df, ‘C:/MyDocuments/TwitterData’) #example file extension. Add your own!</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoid3JpdGUuY3N2KHR3ZWV0cy5kZiwgJ0M6XFxVc2Vyc1xcWW91ck5hbWVcXERvY3VtZW50c1xcQXBwdG9NYXBcXHR3ZWV0cy5jc3YnKSAjZXhhbXBsZSBmaWxlIGV4dGVuc2lvbi4gQWRkIHlvdXIgb3duISJ9 -->
+<pre class="r"><code>write.csv(tweets.df, 'C:\Users\YourName\Documents\ApptoMap\tweets.csv') #example file extension. Add your own!</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><b>10. Click “Run” <b>.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkFwcCB0byBNYXAgVHV0b3JpYWwgUGFydCAxOiBDb2xsZWN0aW5nIFR3ZWV0cyB1c2luZyB0aGUgUkVTVCBBUEkuIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KSW4gb3JkZXIgdG8gZG8gYSBvbmUtdGltZSBjb2xsZWN0aW9uIG9mIHR3ZWV0cywgeW91IHdpbGwgbmVlZCB0byBhY2Nlc3MgVHdpdHRlcidzIFJFU1QgQVBJLiAgVGhlIG5hbWUgb2YgdGhlICBSIHBhY2thZ2UgdGhhdCB5b3UgaGF2ZSB0byBkb3dubG9hZCBhbmQgbG9hZCBpbiBvcmRlciB0byBhY2Nlc3MgdGhlIFJFU1QgQVBJIGlzIHRoZSA8YSBocmVmID0gImh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy90d2l0dGVSL3R3aXR0ZVIucGRmIj5Ud2l0dGVSPC9hPiBwYWNrYWdlIGNyZWF0ZWQgYnkgSmVmZiBHZW50cnkuIFlvdSB3aWxsIGFsc28gaGF2ZSB0byBjcmVhdGUgYSBUd2l0dGVyIGFwcCBpbiBvcmRlciB0byBhY2Nlc3MgdGhlIFJFU1QgQVBJLiBJZiB5b3UgaGF2ZW4ndCBhbHJlYWR5IG1hZGUgb25lLCBnbyB0byA8YSBocmVmID0gImFwcHMudHdpdHRlci5jb20iPmFwcHMudHdpdHRlci5jb208L2E+IGFuZCBjcmVhdGUgYW4gYXBwLiBZb3Ugd2lsbCBuZWVkIHRoZSBDb25zdW1lciBLZXkgKEFQSSBLZXkpLCBDb25zdW1lciBTZWNyZXQgKEFQSSBTZWNyZXQpLCBBY2Nlc3MgVG9rZW4sIGFuZCBBY2Nlc3MgVG9rZW4gU2VjcmV0Lg0KDQo8aDM+VHV0b3JpYWwgT2JqZWN0aXZlczo8L2gzPg0KDQo8aT4xLiBUbyBkbyBhIG9uZS10aW1lIGNvbGxlY3Rpb24gb2YgdHdlZXRzIGJhc2VkIG9uIHVzZXItZGVmaW5lZCBzZWFyY2ggdGVybXMuPC9pPg0KPGk+Mi4gVG8gc2F2ZSB0aGUgdHdlZXRzIGluIGEgLmNzdiBmaWxlLjwvaT4NCg0KDQo8aDM+SW5zdHJ1Y3Rpb25zPC9oMz4NCg0KPGI+MS4gT3BlbiB1cCBSIFN0dWRpbyBhbmQgZ28gdG8gRmlsZSA+IE5ldyBGaWxlID4gUiBTY3JpcHQuIA0KDQo8Yj4yLiBJbnN0YWxsIGFuZCBsb2FkIHRoZSB0d2l0dGVSIHBhY2thZ2UuPC9iPg0KYGBge3J9DQppbnN0YWxsLnBhY2thZ2VzKCJ0d2l0dGVSIikNCmxpYnJhcnkodHdpdHRlUikNCg0KYGBgDQoNCjxiPjMuIE5leHQsIHlvdSB3aWxsIG5lZWQgdG8gZW50ZXIgeW91ciBBUEkga2V5LCBBUEkgc2VjcmV0LCB0b2tlbiwgYW5kIHRva2VuIHNlY3JldC48L2I+DQpgYGB7cn0NCmFwaV9rZXkgPC0gJycgI2luIHRoZSBxdW90ZXMsIHB1dCB5b3VyIEFQSSBrZXkgDQphcGlfc2VjcmV0IDwtICcnICNpbiB0aGUgcXVvdGVzLCBwdXQgeW91ciBBUEkgc2VjcmV0IA0KdG9rZW4gPC0gJycgI2luIHRoZSBxdW90ZXMsIHB1dCB5b3VyIHRva2VuIA0KdG9rZW5fc2VjcmV0IDwtICcnICNpbiB0aGUgcXVvdGVzLCBwdXQgeW91ciB0b2tlbiBzZWNyZXQNCg0KYGBgDQoNCjxiPjQuIFlvdSB3aWxsIG5lZWQgdG8gY29ubmVjdCB0byBUd2l0dGVyIHRvIGFjY2VzcyB0aGUgUkVTVCBBUEkuPC9iPg0KYGBge3J9DQpzZXR1cF90d2l0dGVyX29hdXRoKGFwaV9rZXksIGFwaV9zZWNyZXQsIHRva2VuLCB0b2tlbl9zZWNyZXQpDQoNCmBgYA0KDQo8Yj41LiBUaW1lIHRvIGRvIGEgVHdpdHRlciBzZWFyY2ghIExldCdzIGRvIGEgVHdpdHRlciBzZWFyY2ggb2YgdHdlZXRzIGFib3V0IG5hdGlvbmFsIHBhcmtzOg0KYGBge3J9DQp0d2VldHMgPC0gc2VhcmNoVHdpdHRlcignQFllbGxvd3N0b25lTlBTIE9SICNZZWxsb3dzdG9uZU5hdGlvbmFsUGFyayBPUiBZZWxsb3dzdG9uZSBOYXRpb25hbCBQYXJrIE9SDQogQEdyYW5kQ2FueW9uTlBTIE9SICNHcmFuZENhbnlvbiBPUiBHcmFuZCBDYW55b24gT1IgQFNoZW5hbmRvYWhOUFMgT1IgU2hlbmFuZG9haE5hdGlvbmFsUGFyaw0KIE9SIFNoZW5hbmRvYWggTmF0aW9uYWwgUGFyaycsIG4gPSAyMDAsIGxhbmcgPSAnZW4nKQ0KYGBgDQo8aT5UaGlzIGNvZGUgaXMgc2ltcGx5IHNheWluZyB0byBzZWFyY2ggZm9yIHR3ZWV0cyB3aGljaCBjb250YWluIHRoZSBoYXNodGFncywgdHdpdHRlciBoYW5kbGVzLCBhbmQgbmFtZXMgb2YgdGhlc2UgbmF0aW9uYWwgcGFya3MuPC9pPiA8Zm9udCBjb2xvciA9ICJibHVlIiwgZmFjZSA9ICJDb3VyaWVyIj4obiA9IDIwMCk8L2ZvbnQ+PGk+aW4gRW5nbGlzaDwvaT48Zm9udCBjb2xvciA9ICJibHVlIiwgZmFjZSA9ICJDb3VyaWVyIj4obGFuZyA9IOKAnGVu4oCdKTwvZm9udD4uDQoNCjxiPjguIEFmdGVyIHlvdSBoYXZlIGRvbmUgeW91ciBUd2l0dGVyIHNlYXJjaCwgeW91IHdhbnQgdG8gc2F2ZSB5b3VyIHJlc3VsdHMgaW4gYSBkYXRhIGZyYW1lLjwvYj4NCmBgYHtyfQ0KdHdlZXRzLmRmIDwtdHdMaXN0VG9ERih0d2VldHMpDQpgYGANCg0KPGI+OS4gWW91ciBzZWFyY2ggcmVzdWx0cyBjYW4gYmUgdHJhbnNmZXJyZWQgZnJvbSBhIGRhdGEgZnJhbWUgdG8gYSBjc3YgZm9ybWF0IHNvIHlvdSBjYW4gdmlldyBpbiBFeGNlbC48L2I+DQpgYGB7cn0NCndyaXRlLmNzdih0d2VldHMuZGYsICdDOlxVc2Vyc1xZb3VyTmFtZVxEb2N1bWVudHNcQXBwdG9NYXBcdHdlZXRzLmNzdicpICNleGFtcGxlIGZpbGUgZXh0ZW5zaW9uLiBBZGQgeW91ciBvd24hDQpgYGANCg0KPGI+MTAuIENsaWNrICJSdW4iIDxiPi4NCg0KDQoNCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkFwcCB0byBNYXAgVHV0b3JpYWwgUGFydCAxOiBDb2xsZWN0aW5nIFR3ZWV0cyB1c2luZyB0aGUgUkVTVCBBUEkuIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KSW4gb3JkZXIgdG8gZG8gYSBvbmUtdGltZSBjb2xsZWN0aW9uIG9mIHR3ZWV0cywgeW91IHdpbGwgbmVlZCB0byBhY2Nlc3MgVHdpdHRlcidzIFJFU1QgQVBJLiAgVGhlIG5hbWUgb2YgdGhlICBSIHBhY2thZ2UgdGhhdCB5b3UgaGF2ZSB0byBkb3dubG9hZCBhbmQgbG9hZCBpbiBvcmRlciB0byBhY2Nlc3MgdGhlIFJFU1QgQVBJIGlzIHRoZSA8YSBocmVmID0gImh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy90d2l0dGVSL3R3aXR0ZVIucGRmIj5Ud2l0dGVSPC9hPiBwYWNrYWdlIGNyZWF0ZWQgYnkgSmVmZiBHZW50cnkuIFlvdSB3aWxsIGFsc28gaGF2ZSB0byBjcmVhdGUgYSBUd2l0dGVyIGFwcCBpbiBvcmRlciB0byBhY2Nlc3MgdGhlIFJFU1QgQVBJLiBJZiB5b3UgaGF2ZW4ndCBhbHJlYWR5IG1hZGUgb25lLCBnbyB0byA8YSBocmVmID0gImFwcHMudHdpdHRlci5jb20iPmFwcHMudHdpdHRlci5jb208L2E+IGFuZCBjcmVhdGUgYW4gYXBwLiBZb3Ugd2lsbCBuZWVkIHRoZSBDb25zdW1lciBLZXkgKEFQSSBLZXkpLCBDb25zdW1lciBTZWNyZXQgKEFQSSBTZWNyZXQpLCBBY2Nlc3MgVG9rZW4sIGFuZCBBY2Nlc3MgVG9rZW4gU2VjcmV0Lg0KDQo8aDM+VHV0b3JpYWwgT2JqZWN0aXZlczo8L2gzPg0KDQo8aT4xLiBUbyBkbyBhIG9uZS10aW1lIGNvbGxlY3Rpb24gb2YgdHdlZXRzIGJhc2VkIG9uIHVzZXItZGVmaW5lZCBzZWFyY2ggdGVybXMuPC9pPg0KPGk+Mi4gVG8gc2F2ZSB0aGUgdHdlZXRzIGluIGEgLmNzdiBmaWxlLjwvaT4NCg0KDQo8aDM+SW5zdHJ1Y3Rpb25zPC9oMz4NCg0KPGI+MS4gT3BlbiB1cCBSIFN0dWRpbyBhbmQgZ28gdG8gRmlsZSA+IE5ldyBGaWxlID4gUiBTY3JpcHQuIA0KDQo8Yj4yLiBJbnN0YWxsIGFuZCBsb2FkIHRoZSB0d2l0dGVSIHBhY2thZ2UuPC9iPg0KYGBge3IsIGVjaG89VFJVRSwgZXZhbD1GQUxTRX0NCmluc3RhbGwucGFja2FnZXMoInR3aXR0ZVIiKQ0KbGlicmFyeSh0d2l0dGVSKQ0KDQpgYGANCg0KPGI+My4gTmV4dCwgeW91IHdpbGwgbmVlZCB0byBlbnRlciB5b3VyIEFQSSBrZXksIEFQSSBzZWNyZXQsIHRva2VuLCBhbmQgdG9rZW4gc2VjcmV0LjwvYj4NCmBgYHtyLCBlY2hvPVRSVUUsIGV2YWw9RkFMU0V9DQphcGlfa2V5IDwtICcnICNpbiB0aGUgcXVvdGVzLCBwdXQgeW91ciBBUEkga2V5IA0KYXBpX3NlY3JldCA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgQVBJIHNlY3JldCANCnRva2VuIDwtICcnICNpbiB0aGUgcXVvdGVzLCBwdXQgeW91ciB0b2tlbiANCnRva2VuX3NlY3JldCA8LSAnJyAjaW4gdGhlIHF1b3RlcywgcHV0IHlvdXIgdG9rZW4gc2VjcmV0DQoNCmBgYA0KDQo8Yj40LiBZb3Ugd2lsbCBuZWVkIHRvIGNvbm5lY3QgdG8gVHdpdHRlciB0byBhY2Nlc3MgdGhlIFJFU1QgQVBJLjwvYj4NCmBgYHtyLCBlY2hvID0gVFJVRSwgZXZhbD1GQUxTRX0NCnNldHVwX3R3aXR0ZXJfb2F1dGgoYXBpX2tleSwgYXBpX3NlY3JldCwgdG9rZW4sIHRva2VuX3NlY3JldCkNCg0KYGBgDQoNCjxiPjUuIFRpbWUgdG8gZG8gYSBUd2l0dGVyIHNlYXJjaCEgTGV0J3MgZG8gYSBUd2l0dGVyIHNlYXJjaCBvZiB0d2VldHMgYWJvdXQgbmF0aW9uYWwgcGFya3M6DQpgYGB7ciwgZWNobyA9IFRSVUUsIGV2YWw9IEZBTFNFfQ0KdHdlZXRzIDwtIHNlYXJjaFR3aXR0ZXIoJ0BZZWxsb3dzdG9uZU5QUyBPUiAjWWVsbG93c3RvbmVOYXRpb25hbFBhcmsgT1IgWWVsbG93c3RvbmUgTmF0aW9uYWwgUGFyayBPUg0KIEBHcmFuZENhbnlvbk5QUyBPUiAjR3JhbmRDYW55b24gT1IgR3JhbmQgQ2FueW9uIE9SIEBTaGVuYW5kb2FoTlBTIE9SIFNoZW5hbmRvYWhOYXRpb25hbFBhcmsNCiBPUiBTaGVuYW5kb2FoIE5hdGlvbmFsIFBhcmsnLCBuID0gMjAwLCBsYW5nID0gJ2VuJykNCmBgYA0KPGk+VGhpcyBjb2RlIGlzIHNpbXBseSBzYXlpbmcgdG8gc2VhcmNoIGZvciB0d2VldHMgd2hpY2ggY29udGFpbiB0aGUgaGFzaHRhZ3MsIHR3aXR0ZXIgaGFuZGxlcywgYW5kIG5hbWVzIG9mIHRoZXNlIG5hdGlvbmFsIHBhcmtzLjwvaT4gPGZvbnQgY29sb3IgPSAiYmx1ZSIsIGZhY2UgPSAiQ291cmllciI+KG4gPSAyMDApPC9mb250PjxpPmluIEVuZ2xpc2g8L2k+PGZvbnQgY29sb3IgPSAiYmx1ZSIsIGZhY2UgPSAiQ291cmllciI+KGxhbmcgPSDigJxlbuKAnSk8L2ZvbnQ+Lg0KDQo8Yj44LiBBZnRlciB5b3UgaGF2ZSBkb25lIHlvdXIgVHdpdHRlciBzZWFyY2gsIHlvdSB3YW50IHRvIHNhdmUgeW91ciByZXN1bHRzIGluIGEgZGF0YSBmcmFtZS48L2I+DQpgYGB7ciwgZWNobyA9IFRSVUUsIGV2YWwgPSBGQUxTRX0NCnR3ZWV0cy5kZiA8LXR3TGlzdFRvREYodHdlZXRzKQ0KYGBgDQoNCjxiPjkuIFlvdXIgc2VhcmNoIHJlc3VsdHMgY2FuIGJlIHRyYW5zZmVycmVkIGZyb20gYSBkYXRhIGZyYW1lIHRvIGEgY3N2IGZvcm1hdCBzbyB5b3UgY2FuIHZpZXcgaW4gRXhjZWwuPC9iPg0KYGBge3IsIGVjaG8gPSBUUlVFLCBldmFsPSBGQUxTRX0NCndyaXRlLmNzdih0d2VldHMuZGYsICdDOlxVc2Vyc1xZb3VyTmFtZVxEb2N1bWVudHNcQXBwdG9NYXBcdHdlZXRzLmNzdicpICNleGFtcGxlIGZpbGUgZXh0ZW5zaW9uLiBBZGQgeW91ciBvd24hDQpgYGANCg0KPGI+MTAuIENsaWNrICJSdW4iIDxiPi4NCg0KDQoNCg0K</div>
 
 
 
