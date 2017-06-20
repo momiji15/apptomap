@@ -1,0 +1,52 @@
+---
+title: "App to Map Tutorial Part 2: Mapping your tweets on a Leaflet map."
+output: html_notebook
+---
+
+Now that you have some data, you can now display it in a map. The particular R map package we will be using is <a href = "https://rstudio.github.io/leaflet/">Leaflet</a>. Leaflet is a popular JavaScript based library in which you interactive maps. If you have used OpenStreetMap, you have seen the Leaflet interface before. For this tutorial, we will make only a basic map using Leaflet. One thing worth mentioning is that Leaflet uses the <a href = "https://github.com/smbache/magrittr">magrittr</a> pipe operator (%>%) which makes it easier to write code because the syntax is more natural. It might seem strange at first, but it does cut down on the amount of work you would have to do when writing code. 
+
+<h3>Tutorial Objective:</h3>
+
+<i>1. To add collected Twitter data to a Leaflet map.</i>
+
+
+<h3>Instructions</h3>
+<b>1. Open up R Studio and go to File > New File > R Script. 
+
+<b>2. Install and load these packages:</b>
+```{r}
+#install these packages
+install.packages("leaflet")
+install.packages("maps")
+install.packages("magrittr")
+
+#load these packages
+library (leaflet)
+library (maps)
+library (magrittr)
+```
+
+<b>3. Now you need a way for Leaflet to access your data:</b>
+```{r}
+mymap <- read.csv("C:\Users\YourName\Documents\ApptoMap\tweets.csv",
+                  stringsAsFactors = FALSE)
+```
+
+<b>4. Now it's time to make a Leaflet map! We are going to use the OpenStreetMap base map for 
+      our map and add the tweets to this base map.</b>
+```{r}
+leaflet(mymap) %>%
+  addTiles() %>% #loading OpenStreetMap basemap
+    addCircles(lng = ~lon, lat = ~lat, popup = mymap$type, weight = 8, radius = 40, color = "#fb3004",
+             stroke = TRUE, fillOpacity = 0.8) #adding the tweets to the map.
+```
+
+<b>5. Click "Run." </b>
+
+<b>6. When you run your code, a web browser should pop-up and display your map. Here is a map of some tweets    that I collected.</b>
+      
+    
+![Alt text](C:/Users/Dorris/Documents/ApptoMap/ATM/leafletmap.jpg)
+
+
+
