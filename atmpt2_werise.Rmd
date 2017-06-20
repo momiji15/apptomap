@@ -1,7 +1,10 @@
 ---
-title: "App to Map Tutorial Part 2: Mapping your tweets on a Leaflet map."
+title: "App to Map Tutorial Part 2"
 output: html_notebook
 ---
+
+<h1>App to Map Tutorial Part 2: Mapping Your Tweets on a Leaflet Map</h1>
+
 
 Now that you have some data, you can now display it in a map. The particular R map package we will be using is <a href = "https://rstudio.github.io/leaflet/">Leaflet</a>. Leaflet is a popular JavaScript based library in which you interactive maps. If you have used OpenStreetMap, you have seen the Leaflet interface before. For this tutorial, we will make only a basic map using Leaflet. One thing worth mentioning is that Leaflet uses the <a href = "https://github.com/smbache/magrittr">magrittr</a> pipe operator (%>%) which makes it easier to write code because the syntax is more natural. It might seem strange at first, but it does cut down on the amount of work you would have to do when writing code. 
 
