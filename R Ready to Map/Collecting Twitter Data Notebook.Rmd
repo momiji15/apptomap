@@ -14,13 +14,13 @@ output: html_notebook
 
 
 
-##Lesson 1: Searching Twitter
+## Lesson 1: Searching Twitter
 
-###Scenario
+### Scenario
 <i>You decide that it might be a pretty good idea just to gauge how food truck related hashtags are being used in the Twitterverse. You feel that knowing this might allow you to get better insights on launching a successful social media campaign. You decide to check out a food truck that you have been following which is [Cupbop](https://www.sltrib.com/artsliving/food/2017/08/30/cupbop-serves-up-a-winning-combo-for-success-in-utah-and-beyond/)</i>.
 
 
-###Instructions
+### Instructions
 1. Go to https://twitter.com/search-home
 
 2. In the search box, type #cupboptruck and notice the results.
@@ -33,7 +33,7 @@ best job in collecting the information you want.
 
 
 
-##Lesson 2: Getting to know the application program interface
+## Lesson 2: Getting to know the application program interface
 Before you embark on this quest of collecting tweets, it is important to understand what you
 need to use in order to collect the tweets. You know that you will be using R to write your code
 order to collect the tweets, but what will your code be calling in order to collect those tweets?
@@ -44,15 +44,15 @@ this case, we will be using the Twitter API in order to collect the tweets. Let�
 do not have a Twitter account, then go to www.twitter.com and sign up for one. All you need to
 provide is your full name, phone or e-mail and your password!
 
-###Scenario 
+### Scenario 
 <i>After doing some research, you realized that you will need to make a Twitter App in order to
 collect the information that you need.</i>
 
 
-###Terms to Know
+### Terms to Know
 <b>API</b>: Application Program Interface. A set of tools which allows you to build application software. For more information, click [here](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82).
 
-###Instructions
+### Instructions
 1. Go to apps.twitter.com and click on “Create New App.”
 
 2. Fill out the application Name, Description and Website information.
@@ -84,7 +84,7 @@ tweets.
 The name of the R package that we will be using in order to access the Twitter API is the [rtweet](https://cran.r-project.org/web/packages/rtweet/rtweet.pdf) package created by Michael W. Kearney. The particular function that we will concern ourselves with in order to do a Twitter search the
 search_tweets() function. Let’s get started!
 
-###Scenario
+### Scenario
 You just got off the phone with one of your investors (aka your uncle) and he wants a
 preliminary report about how people are tweeting about food trucks in the areas you're interested in having your food truck. You decide that you want to make a one-time collection of tweets using R.
 
@@ -96,7 +96,7 @@ preliminary report about how people are tweeting about food trucks in the areas 
 
 <b>UTF-8</b>: Unicode Transformation Format 8-bit. A type of character encoding that supports unicode characters. For more information, click [here](https://www.w3schools.com/charsets/ref_html_utf8.asp).
 
-###Instructions
+### Instructions
 1. Open up RStudio.
 2. Click on File -> New File -> RScript or just click the icon on the top left corner and click on RScript. If you want to just follow along, feel free to do so and just run each code segement within the notebook! However, I recommend you write out the code so you can get the hang of it!
 3. The first thing we are going to do is to install and load the rtweet package. In your code editor, type:
@@ -152,21 +152,21 @@ save_as_csv(foodtrucktweets, file_name = "foodtrucktweets.csv", prepend_ids = TR
 
 <b>Congratulations! You did your first Twitter search using the rtweet package!</b>
 
-##Lesson 3: Doing a continuous collection of tweets
+## Lesson 3: Doing a continuous collection of tweets
 When a one-time collection will not suffice, the other option is to collect tweets in real-time. The rtweet package can do this as well! You will need to use the stream_tweets() function in order to do this. One main difference between the search_tweets() function and the stream_tweets() function is that you can save your Twitter search in JSON. 
 
-###Scenario
+### Scenario
 <i>You need to actually do some other work regarding your business (as in actually selling the
 ramen and bubble tea), so it’s time to work smarter and not harder. You decide that while you're running errands to get what you need for the food truck, you will collect tweets in R for a particular time period (I recommend three hours, but for the sake of this tutorial, let’s do five minutes).</i>
 
-###Terms to Know
+### Terms to Know
 
 
 <b>JSON</b>: JavaScript Object Notation. A  format which can store such data structures such as objects and arrays. To find out more information, check out the [official JSON page](https://www.json.org/) or this [page](https://www.w3schools.com/js/js_json_intro.asp).
 
 <b>parsing</b>:To read JSON file in whatever programming language you are using(HTML, R, etc). 
 
-###Instructions
+### Instructions
 1. If you already haven't done so, open up RStudio and create a new RScript. If you are continuing on from previous lessons, then go ahead and use the RScript you are using now!
 
 2. Set your working directory if you haven't done so. You can do that two ways. Do you remember which ways you can set your working directory? If not, refer to the "Getting Started" notebook to refresh your memory.
@@ -226,14 +226,14 @@ foodtruckparse <- parse_stream("foodtrucktweets.json")
 
 10. In the data section of the RStudio IDE, click on "foodtruckparse" and you will see your information neatly arranged in a data frame!
 
-##Lesson 4: It's Your Turn!
+## Lesson 4: It's Your Turn!
 
 This lesson will be short and sweet. Choose a topic and search for some tweets about it! This lesson will also go over three useful things out of the whole pool of useful things in the rtweet package. If you want to see what else this package has to offer, go [here](http://rtweet.info/index.html) or refer to the [documentation](https://cran.r-project.org/web/packages/rtweet/rtweet.pdf).
 
-###Useful Thing #1: Creating a plot to see the time frequency of tweets
+### Useful Thing #1: Creating a plot to see the time frequency of tweets
 This can be a useful function for it sees how tweets vary over time. Going back to our food truck example, let's see how people are tweets about food trucks within a four hour time period. We can do this by using the ts_plot function. We will plot the foodtrucktweets variable. In order to use this function, you need to install(if it's not already installed) and load ggplot2! 
 
-##Terms to Know
+### Terms to Know
 <b>ggplot2</b>: An R package used for data visualization.
 <b>vector</b>: A data type that stores data of the same type.
 
@@ -247,7 +247,7 @@ ts_plot(foodtrucktweets, "4 hours") + ggplot2::theme_minimal()+
 ```
 Going into ggplot2 is beyond the scope of this tutorial but you can check out this [online reference](http://ggplot2.tidyverse.org/reference/) to find out more information about ggplot2.
 
-###Useful Thing #2: 
+### Useful Thing #2: 
 Interested in looking up users? There's a function for that! Going back to our food truck example, let's look up user data by the user name of some food trucks in Atlanta.
 
 ```{r, chunk-thirteen, echo = TRUE, eval = FALSE}
@@ -264,7 +264,7 @@ atlfoodtrucktweets <- tweets_data(atlfoodtrucks)
 
 
 
-###Userful Thing #3: 
+### Useful Thing #3: 
 You can see which users are following a certain twitter account. Let's see who is following the twitter handle for the Not As Famous Cookie food truck along with information about these accounts.
 ```{r, chunk-fourteen, echo = TRUE, eval = FALSE}
 #get 200 users(n = 200) who are following the Not as Famous Cookie food truck(notasfamous)
@@ -275,5 +275,5 @@ notasfamous_followdata <- lookup_users(notasfamous_followers$user_id)
 ```
 
 
-##You Made it!
+## You Made it!
 Congratulations for reaching the end of this unit! Hopefully you have confidence in collecting tweets using the rtweet package! There's a whole lot more that this package offers so just don't stop at this tutorial! 
