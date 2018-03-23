@@ -234,7 +234,6 @@ This lesson will be short and sweet. Choose a topic and search for some tweets a
 This can be a useful function for it sees how tweets vary over time. Going back to our food truck example, let's see how people are tweets about food trucks within a four hour time period. We can do this by using the ts_plot function. We will plot the foodtrucktweets variable. In order to use this function, you need to install(if it's not already installed) and load ggplot2! 
 
 ### Terms to Know
-
 <b>ggplot2</b>: An R package used for data visualization.
 <b>vector</b>: A data type that stores data of the same type.
 
