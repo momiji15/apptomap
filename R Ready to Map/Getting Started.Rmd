@@ -19,7 +19,7 @@ Unit 2: Mapping Twitter Data. In this unit, you will learn how to map Twitter da
 Unit 3: Creating an Interactive document. In this unit, you will learn how to create an RMarkdown document and integrate elements such as a leaflet map and plots.
 
 ## Main Scenario 
-<i> You decided to make a life change and and decided to get into the food truck business. You had this idea of having a food truck named "Oishii Ramen" (oishii means tasty in Japanese) which would serve ramen, dumplings, and bubble tea.  Miraculously, you were able to raise enough money to buy a food truck through crowdfunding and some kind investors (family members), but you stillhave a limited budget. You decided that you would rely on social media to advertise your business. Being a new business owner, you feel overwhelmed with the task at hand. Where do you begin?</i>
+<i> You decided to make a life change and and decided to get into the food truck business. You had this idea of having a food truck named "Oishii Ramen" (oishii means tasty in Japanese) which would serve ramen, dumplings, and bubble tea.  Miraculously, you were able to raise enough money to buy a food truck through crowdfunding and some kind investors (family members), but you still have a limited budget. You decided that you would rely on social media to advertise your business. Being a new business owner, you feel overwhelmed with the task at hand. Where do you begin?</i>
 
 ## Terms to Know
 <b>RStudio</b>: The IDE that is used for the R programming language. 
