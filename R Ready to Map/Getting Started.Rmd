@@ -4,7 +4,7 @@ output: html_notebook
 ---
 
 ## Tutorial Purpose
-The purpose of this tutorial is to help those with with a varieties of experiences in R ranging from complete beginner to advanced to learn how to
+The purpose of this tutorial is to help those with with a varieties of experiences in R, ranging from complete beginner to advanced, to learn how to
 write code to collect tweets using the rtweet package and to display tweets on a basic
 interactive map using Leaflet for R, an R mapping package.
 By the end of this tutorial, one should be able to know how to do a one-time collection of
