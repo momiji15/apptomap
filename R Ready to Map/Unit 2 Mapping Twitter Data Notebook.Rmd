@@ -9,7 +9,7 @@ output: html_notebook
 
 <b>2. To map geotagged tweets.</b>
 
-##Lesson 1: Introduction to Leaflet
+## Lesson 1: Introduction to Leaflet
 Now that you have some data, you can now display it in a map. The particular R map package we will be using is Leaflet. Leaflet is a popular JavaScript based library in which you interactive maps. If you have used OpenStreetMap, you have seen the Leaflet interface before. For this tutorial, we will make only a basic map using Leaflet. For more information about Leaflet, go here:https://rstudio.github.io/leaflet/.
 
 One thing worth mentioning is that Leaflet uses the magrittr pipe operator (%>%) which makes it easier to write code because the syntax is more natural. It might seem strange at first, but it does cut down on the amount of work you would have to do when writing code. You can find more information about the magrittr pipe operator here: https://github.com/smbache/magrittr.
