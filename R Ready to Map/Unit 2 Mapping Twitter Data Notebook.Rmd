@@ -110,5 +110,5 @@ leaflet(ft) %>%
 
 ![](images/leafletmap3.JPG)
 
-##Wrapping Up
+## Wrapping Up
 In this  lesson, we displayed the Twitter information in an interactive map using Leaflet. This tutorial only touched the basics of using Leaflet. You can find more information on how to customize Leaflet maps at the official [Leaflet for R page](https://rstudio.github.io/leaflet/) along with the [documentation](https://cran.r-project.org/web/packages/leaflet/leaflet.pdf) for the Leaflet for R package. Go ahead and try to tweak your map even further!
