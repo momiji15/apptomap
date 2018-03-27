@@ -4,7 +4,7 @@ output: html_notebook
 ---
 
 ## Unit Learning Objectives
-<b>1. To understand the the Twitter API used for collecting data.</b>
+<b>1. To understand the Twitter API used for collecting data.</b>
 
 <b>2. To learn how to do a one-time collection of tweets.</b>
 
