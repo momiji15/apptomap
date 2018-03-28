@@ -108,7 +108,7 @@ library(rtweet) #loads rtweet
 3. Now we are going to enter the API information of your app. Go to apps.twitter.com and
 click on the app that you made.
 4. Click on “Keys and Access Tokens.” You will need the name of your app, Consumer Key (API key),
-Consumer Secret(API secret), Access Token and Access Token Secret. Put this information within the quotes.
+and Consumer Secret(API secret). Put this information within the quotes.
 
 ```{r, chunk-three, echo=TRUE, eval= FALSE}
 ##whatever name you assigned to your created app
