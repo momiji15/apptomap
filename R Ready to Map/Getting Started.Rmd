@@ -51,3 +51,10 @@ If you have opened this notebook within RStudio, then you can run the above code
 ```{r, chunk-two, echo = TRUE, eval = FALSE}
 setwd('~/')
 ```
+
+I have posted two presentations that gives a general gist of the units on GitHub. You can download them as HTML presentation by saving them. For those who have issues with downloading or viewing the presentations, I published the presentations on RPubs:
+- [Unit 1: Collecting Twitter Data](http://rpubs.com/momiji15/374922)
+- [Unit 2: Mapping Twitter Data](http://rpubs.com/momiji15/374923)
+
+Feel free to message me if you have any issues with any of the materials!
+
