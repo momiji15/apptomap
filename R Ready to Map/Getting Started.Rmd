@@ -55,7 +55,7 @@ setwd('~/')
 I have posted two presentations that gives a general gist of the units on GitHub. You can download them as HTML presentation by saving them. You can do this by clicking on "View Raw" and then right-click and choose "Save As." For those who have issues with downloading or viewing the presentations, I published the presentations on RPubs:
 - [Unit 1: Collecting Twitter Data](http://rpubs.com/momiji15/374922)
 - [Unit 2: Mapping Twitter Data](http://rpubs.com/momiji15/374923)
-- [Unit 3: Creating Dynamic Documents](http://rpubs.com/momiji15/375934)
+- [Unit 3: Creating Dynamic Documents](http://rpubs.com/momiji15/376043)
 
 Feel free to message me if you have any issues with any of the materials!
 
