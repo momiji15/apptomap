@@ -60,11 +60,8 @@ I have posted three presentations that gives a general gist of the units on GitH
 ## Examples 
 Here are example documents that were made for the course.
 ### Unit 3
-Creating an R Markdown Document: [Food Truck Report for Investors](http://rpubs.com/momiji15/375864)
-
-Creating an R Markdown Presentation: [Food Truck Presentation](http://rpubs.com/momiji15/375887)
-
-
+  - Creating an R Markdown Document: [Food Truck Report for Investors](http://rpubs.com/momiji15/375864)
+  - Creating an R Markdown Presentation: [Food Truck Presentation](http://rpubs.com/momiji15/375887)
 
 Feel free to message me if you have any issues with any of the materials!
 
