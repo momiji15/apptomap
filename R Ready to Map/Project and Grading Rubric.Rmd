@@ -3,9 +3,6 @@ title: "Spring Trend Grading Rubric"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 ## Group Project Requirements
   - Collecting tweets using either the stream_tweets or search_tweets function. Make sure to justify why you use
@@ -36,5 +33,5 @@ knitr::opts_chunk$set(echo = FALSE)
   
 Make sure to publish your R Markdown presentation and R Markdown document on RPubs. You can attach a link to your documents in a Word document and submit them to ELC. Only one person per group needs to submit a link. Make sure to put the name of your team members on your Word document, R Markdown presention, and R Markdown document. Points will be taken off you fail to do this!
   
-###Total Points: 100
+### Total Points: 100
 
