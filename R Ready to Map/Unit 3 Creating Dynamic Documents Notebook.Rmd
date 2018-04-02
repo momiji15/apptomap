@@ -17,6 +17,8 @@ just creating a map and sharing it, you can do so with creating R Markdown docum
 
 You have many options when it comes to creating R Markdown documents such as creating websites, slides, and dashboards. With R Markdown, you are able to run the code within the document and embed interactive elements such as a leaflet map! For more specific information about R Markdown go [here](https://rmarkdown.rstudio.com/). For this course, you will learn how to create a basic R Markdown document and R Presentation. 
 
+To see what this notebook looks like as a published R Markdown document on RPubs, [click here](http://rpubs.com/momiji15/376038).
+
 
 ![](images/Rmarkdown2.jpg)
 
