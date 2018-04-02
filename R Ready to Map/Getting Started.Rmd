@@ -56,5 +56,6 @@ I have posted two presentations that gives a general gist of the units on GitHub
 - [Unit 1: Collecting Twitter Data](http://rpubs.com/momiji15/374922)
 - [Unit 2: Mapping Twitter Data](http://rpubs.com/momiji15/374923)
 - [Unit 3: Creating Dynamic Documents](http://www.rpubs.com/momiji15/375931)
+
 Feel free to message me if you have any issues with any of the materials!
 
