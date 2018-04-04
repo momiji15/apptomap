@@ -160,9 +160,8 @@ When a one-time collection will not suffice, the other option is to collect twee
 ramen and bubble tea), so it’s time to work smarter and not harder. You decide that while you're running errands to get what you need for the food truck, you will collect tweets in R for a particular time period (I recommend three hours, but for the sake of this tutorial, let’s do five minutes).</i>
 
 ### Terms to Know
-
-
 <b>JSON</b>: JavaScript Object Notation. A  format which can store such data structures such as objects and arrays. To find out more information, check out the [official JSON page](https://www.json.org/) or this [page](https://www.w3schools.com/js/js_json_intro.asp).
+
 
 <b>parsing</b>:To read JSON file in whatever programming language you are using(HTML, R, etc). 
 
@@ -201,7 +200,7 @@ limit to collect the tweets. This variable will be used in the timeout parameter
 
 `t <- 60 * 60 * 24` means to search for tweets for a period of one day.
 
-`t <- 60 * 60 * 24 * 4` means to search for tweets for a period of three days.
+`t <- 60 * 60 * 24 * 3` means to search for tweets for a period of three days.
 
 Do you have any ideas how to create a time limit of five minutes? Let's find out if you are right!
 
