@@ -26,10 +26,9 @@ output: html_document
   5. Four other linked images. <b>10 points</b>
   6. Leaflet Map. <b>10 points</b>
   7. Plot showing frequency of tweets over a time period using the ts_plot package. <b>6 points</b>
-  8. How many tweets did you collect? Give the time period in which you collected tweets. <b>10 points</b>
-  9. Issues encountered while collecting tweets. <b>10 points</b>
-  10. Creating an R Markdown Presentation which includes the major elements of the project. <b>10 points </b>
-  11. Presentation flow(making sure the presentation is cohesive and all members taking a part). <b>10 points</b>
+  8. Issues encountered while collecting tweets. <b>10 points</b>
+  9. Creating an R Markdown Presentation which includes the major elements of the project. <b>10 points </b>
+  10. Presentation flow(making sure the presentation is cohesive and all members taking a part). <b>10 points</b>
   
 Make sure to publish your R Markdown presentation and R Markdown document on RPubs. You can attach a link to your documents in a Word document and submit them to ELC. Only one person per group needs to submit a link. Make sure to put the name of your team members on your Word document, R Markdown presention, and R Markdown document. Points will be taken off you fail to do this!
   
