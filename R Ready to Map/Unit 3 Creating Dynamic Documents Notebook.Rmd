@@ -52,7 +52,7 @@ Let's make an R Markdown Document! Let's start out making a document which have 
 
 ![](images/newmarkdown.jpg)
 
-###Creating Headers 
+### Creating Headers 
 Let's now make some headers. We will make a header for an introduction, map, preliminary analysis, and conclusion.
 R Markdown has different types of headers. Here are some of the headers with the accompanying code for each header. 
 
@@ -92,7 +92,7 @@ Let's make the sentence under the "Map" section **bold.** You do this by adding 
 **This is the map section.**
 `**This is the map section.**`
 
-###Embedding a Leaflet Map Into Your Document
+### Embedding a Leaflet Map Into Your Document
 Remember in Unit 1 when we plotted the frequency of tweets about food trucks? We're going to add that plot to our document! We will do this by adding a code chunk. In order to add a code chunk you need to add this do your document:
 
 
