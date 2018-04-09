@@ -3,6 +3,8 @@ title: "R Ready to Map: Getting Started"
 output: html_notebook
 ---
 
+# R Ready to Map
+
 ## Tutorial Purpose
 The purpose of this tutorial is to help those with with a varieties of experiences in R, ranging from complete beginner to advanced, to learn how to
 write code to collect tweets using the rtweet package and to display tweets on a basic
