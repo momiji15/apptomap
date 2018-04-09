@@ -7,7 +7,9 @@ Here are the links to the R Slides and R Documents for each group!
 [Allergy Season R Document](http://rpubs.com/xtianpedraza/allergyseasondoc)
 
 ## Spring Break Group
+[Spring Break Slides](https://rpubs.com/rcp1997/doc2)
 
+[Spring Break R R Document(https://rpubs.com/rcp1997/spring_break_tweet_analysis)
 
 ## March Madness Group
 [March Madness Slides](http://rpubs.com/pha65455/378197)
