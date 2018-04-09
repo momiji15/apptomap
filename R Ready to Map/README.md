@@ -65,3 +65,5 @@ Here are example documents that were made for the course.
 
 Feel free to message me if you have any issues with any of the materials!
 
+# Use of Course Materials
+Please feel free to use these course materials for your personal use or to integrate in your class or workshop, but please give credit where it's due. A lot of hard work went into making this course! :).
