@@ -12,7 +12,7 @@ Here are the links to the R Slides and R Documents for each group!
 ## March Madness Group
 [March Madness Slides](http://rpubs.com/pha65455/378197)
 
-[March Madness Presentation(http://rpubs.com/pha65455/378199)
+[March Madness Presentation](http://rpubs.com/pha65455/378199)
 
 ## Baseball Group
 [Baseball Slides](https://rpubs.com/AlecNelson_/MLB_Tweets)
