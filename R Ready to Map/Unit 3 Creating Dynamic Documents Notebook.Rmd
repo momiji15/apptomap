@@ -166,7 +166,7 @@ After that click on Publish.
 You will be directed to an external Rpubs page. Enter in the name of the document along with a description. You can give your site a semi-customized URL if you want.
 
 
-##Lesson 3: Creating an R Presentation
+## Lesson 3: Creating an R Presentation
 
 Time to create an R presentation! You can do this by going to File -> New File -> R Markdown. Make sure to click "Presentation" on the left panel and name your presentation "Food Truck Presentation" in the title section. Leave the Default Output format to ioslides. You will now see a new document pop up in the RStudio IDE.
 
