@@ -1,7 +1,5 @@
----
-title: "R Ready to Map Unit 1: Collecting Tweets with the rtweets package"
-output: html_notebook
----
+# "R Ready to Map Unit 1: Collecting Tweets with the rtweets package"
+
 
 ## Unit Learning Objectives
 <b>1. To understand the Twitter API used for collecting data.</b>
