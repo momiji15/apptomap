@@ -1,8 +1,5 @@
----
-title: 'R Ready to Map Unit 2: Mapping Twitter Data with Leaflet'
-output: html_notebook
-  
----
+
+# 'R Ready to Map Unit 2: Mapping Twitter Data with Leaflet'
 
 ## Unit Learning Objectives
 <b>1. To understand the basic functions of the leaflet for R package.</b>
