@@ -2,7 +2,7 @@
 
 
 ## Unit Learning Objectives
-<b>1. To understand the Twitter API used for collecting data.</b>
+<b>1. To understand the Twitter and Google Maps APIs used for collecting data.</b>
 
 <b>2. To learn how to do a one-time collection of tweets.</b>
 
@@ -38,19 +38,35 @@ order to collect the tweets, but what will your code be calling in order to coll
 The “thing” that you will need to call to get those tweets is called an <b>application program
 interface (API)</b>. You can think of an application program interface as an electronic personal
 assistant of sorts. You use the API in order to ask another program to do something for you. In
-this case, we will be using the Twitter API in order to collect the tweets. Let’s get started! If you
-do not have a Twitter account, then go to www.twitter.com and sign up for one. All you need to
-provide is your full name, phone or e-mail and your password!
+this case, we will be using the Twitter API in order to collect the tweets. You also need to use the Google Maps API in order to create interactive maps. Let’s get started! If you do not have a Twitter account, then go to www.twitter.com and sign up for one. All you need toprovide is your full name, phone or e-mail and your password!
 
 ### Scenario 
 <i>After doing some research, you realized that you will need to make a Twitter App in order to
-collect the information that you need.</i>
+collect the information that you need. </i>
 
 
 ### Terms to Know
 <b>API</b>: Application Program Interface. A set of tools which allows you to build application software. For more information, click [here](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82).
 
 ### Instructions
+#### Applying for a Twitter Developer Account
+<i>Note: For students who are taking the R Ready to Map Course, I have created an organizational account and I will add you to this account. Due to the updated terms of service, any affiliation with an academic institution requires an organization account. If you are interested in creating a developer account because you want to do a side-project or a hobby, then you can proceed with these instructions.</i>
+
+
+In order to create a Twitter app, you need to apply for a developer account. 
+
+1. Go to developer.twitter.com and click on "Apply" in the top right-hand corner.
+
+2. You will see a prompt to Apply for access. Go ahead and click "Apply for a developer account." If your memory is a little rusty
+   on restricted uses of Twitter, then click on "Restricted Use Cases" to re-acquaint yourself on this topic.
+   
+3. Select a user profile to associate with our development account and press "Continue."
+
+4. If you are using this account for personal use, then select "I am requesting access for my own personal use." If you are affiliated
+   with an organization and are doing projects on behalf of that organization, then click "I am requesting access for my organization."
+
+
+
 1. Go to apps.twitter.com and click on “Create New App.”
 
 2. Fill out the application Name, Description and Website information.
@@ -60,7 +76,7 @@ If you do not have a website, then that’s okay! You can put your blog address,
 3. In the "Callback URL" section, make sure to put http://127.0.0.1:1410. <b>This is important!</b>
 
 4. Check “Yes, I agree” in the Twitter Developer Agreement and then click on the “Create
-your Twitter application” button.
+your Twitter application” button. 
 
 5. Once you do that, your app is created! If you ever want to change the name of the app, the description, or the website, you can click on the settings tab and change this information.
 
