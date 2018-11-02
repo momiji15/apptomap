@@ -79,7 +79,9 @@ If you do not have a website, then that’s okay! You can put your blog address,
 
 ![](images/App1.JPG)
 
+
 ![](images/App2.JPG)
+
 
 ![](images/App3.JPG)
 
@@ -96,15 +98,19 @@ Key) and Consumer Secret (API Secret). You will need the API Key and API secret 
 #### Applying for a Google Maps API
 If you don't already have one, you will need to apply to get a  Google Maps API key to collect geo-located tweets.
 
-1. Go to the [Google Maps Platform page](https://cloud.google.com/maps-platform/maps/) and click on "Get Started." In the "Pick Your
+1. Go to the [Google Maps Platform page] (https://cloud.google.com/maps-platform/maps/) and click on "Get Started." In the "Pick Your
    Product" prompt, click the Maps checkbox and then click "Continue."
 
 2. You will be prompted to select a project. If you already have a project, select it. If not, then click on "+ Create a New Project". 
    Enter the project name and select "Next".
 
-3. Unfortunately you're going to have to hock up a credit card number to Google for billing purposes. You get [$200 in credit]
-   (https://cloud.google.com/maps-platform/pricing/) for the APIs. You probably will not even use all of this up if you are taking this 
-    class. Provide your billing details and confirm.
+3. Unfortunately you're going to have to hock up a credit card number to Google for billing purposes. You get [$200 in credit](https://cloud.google.com/maps-platform/pricing/) for the APIs. You probably will not even use all of this up if you are taking this 
+   class. Provide your billing details and confirm. After you do that, you should see your key. Store your API key in a safe and 
+   accessible place. You will need this later on.
+ 
+ 4. If you happen to get off the Google Cloud Platform, then go [here](https://console.cloud.google.com/) and then click on "Select 
+    a project" and select your project. In the search box, type "API key" and you should see a result pop-up called "API Credentials."
+    Select the pop-up and you will then see your API key information.
 
 
 ##Lesson 3: Doing a one-time collection of tweets
