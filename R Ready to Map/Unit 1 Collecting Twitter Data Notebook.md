@@ -78,12 +78,13 @@ If you do not have a website, then that’s okay! You can put your blog address,
 4. Click "Create."
 
 ![](images/App1.JPG)
-
+<br></br>
 
 ![](images/App2.JPG)
-
+<br></br>
 
 ![](images/App3.JPG)
+<br></br>
 
 5. You will be prompted to review the developer terms. If you didn't already do so before, please do it now. To emphasize this point,      I'm going to put it in bold text. <b>It is important to use Twitter in a responsible manner to avoid your account being suspended or 
    terminated!</b>
