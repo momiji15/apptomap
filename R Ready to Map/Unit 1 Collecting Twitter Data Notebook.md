@@ -113,7 +113,7 @@ If you don't already have one, you will need to apply to get a  Google Maps API 
     Select the pop-up and you will then see your API key information.
 
 
-##Lesson 3: Doing a one-time collection of tweets
+## Lesson 3: Doing a one-time collection of tweets
 It’s finally time to try a Twitter search and collection in R! Now that you have created a Twitter
 App, you start to explore the [Twitter Developer page](https://developer.twitter.com/en/docs) to learn more about
 how APIs work for Twitter. In order to test the waters, you want to do a one-time collection of
@@ -123,10 +123,9 @@ The name of the R package that we will be using in order to access the Twitter A
 search_tweets() function. Let’s get started!
 
 ### Scenario
-You just got off the phone with one of your investors (aka your uncle) and he wants a
-preliminary report about how people are tweeting about food trucks in the areas you're interested in having your food truck. You decide that you want to make a one-time collection of tweets using R.
+<i>You just got off the phone with one of your investors (aka your uncle) and he wants a preliminary report about how people are tweeting about food trucks in the areas you're interested in having your food truck. You decide that you want to make a one-time collection of tweets using R.</i>
 
-###Terms to Know
+### Terms to Know
 
 <b>function</b>: A segment of a program that performs a certain task. 
 
