@@ -136,17 +136,32 @@ search_tweets() function. Let’s get started!
 
 ### Instructions
 1. Open up RStudio.
-2. Click on File -> New File -> RScript or just click the icon on the top left corner and click on RScript. If you want to just follow along, feel free to do so and just run each code segement within the notebook! However, I recommend you write out the code so you can get the hang of it!
-3. The first thing we are going to do is to install and load the rtweet package. In your code editor, type:
+
+2. Let's create an R Project. Think of this as your workspace. You can have as many projects as you want. Click on File -> New Project
+   -> New Directory -> New Project.
+   
+3. Write your directory name, choose the subdirectory you want to store your project under, and then click the "Create Project"
+   button.  
+
+4. Now let's create an R Script. Click on File -> New File -> RScript or just click the icon on the top left corner and click on 
+   RScript. If you want to just follow along, feel free to do so and just run each code segement within the notebook! However, I 
+   recommend you write out the code so you can get the hang of it!
+ 
+5. Congrats on creating your R Project and R Script! Let's set the working directory. The working directory is where R will save 
+   any files that you make. Also, if you load a csv file into R Studio, all you have to do is write the name of the file with the 
+   file extension as opposed to the entire location of the file(ex C:\My Documents\R Stuff\My R Project\mycsv.csv...).
+
+6. It's time to install and load the rtweet package. In your code editor, type:
 ```{r, chunk-two, echo = TRUE, eval = FALSE}
 install.packages("rtweet") #installs the package
 library(rtweet) #loads rtweet
 ```
 
-3. Now we are going to enter the API information of your app. Go to apps.twitter.com and
-click on the app that you made.
-4. Click on “Keys and Access Tokens.” You will need the name of your app, Consumer Key (API key),
-and Consumer Secret(API secret). Put this information within the quotes.
+7. Now we are going to enter the API information of your app. Go to developer.twitter.com, click on your profile name on the top right-
+   hand corner and click on Apps. Then click on the "Details" button to get the necessary information to access the Twitter API.
+
+8. Click on “Keys and Tokens.” You will need the name of your app, Consumer Key (API key),and Consumer Secret(API secret). Put this 
+   information within the quotes.
 
 ```{r, chunk-three, echo=TRUE, eval= FALSE}
 ##whatever name you assigned to your created app
@@ -165,23 +180,25 @@ twitter_token <- create_token(
   consumer_secret = secret)
 ```
 
-5.Once you do this, run your code! An external page will pop-up and there will be a message that says "Authentication complete. Please close this page and return to R."
-6. Time to do a Twitter search! You want to get 1,000(n=1000) tweets about food trucks(#foodtruck), but you do not want to include retweets(include_rts = FALSE) Type:
+9.Once you do this, run your code! An external page will pop-up and ask you to authorize your app. Click "Authorize app" and there will be a message that says "Authentication complete. Please close this page and return to R."
+
+10. Time to do a Twitter search! You want to get 1,000(n=1000) tweets about food trucks(#foodtruck), but you do not want to include retweets(include_rts = FALSE) Type:
 ```{r, chunk-four, echo=TRUE, eval=FALSE}
 foodtrucktweets <- search_tweets("#foodtruck", n = 1000, include_rts = FALSE)
 ```
 <i>This line of code is essentially saying, "Search for 1000 tweets that include the hashtag food trucks and do not include retweets. Put the tweets in a file named "foodtruck_tweets.json." F(f)oodtrucktweets is the name of the variable that you are assigning the function to.</i>
 
-7. In the Data section of the RStudio IDE, you should see the new variable you made. Click on "foodtrucktweets" and you will see the tweets in a data frame. Here is an example of the tweets that I collected.
+11. In the Data section of the RStudio IDE, you should see the new variable you made. Click on "foodtrucktweets" and you will see the tweets in a data frame. Here is an example of the tweets that I collected.
 ![](images/tweets.JPG)
 
-8. Like your uncle requested, you need to collect food truck related tweets in the areas you will have your food truck. You decide you want to check out what areas in Georgia are tweeting about food trucks.
+12. Like your uncle requested, you need to collect food truck related tweets in the areas you will have your food truck. You decide you want to check out what areas in Georgia are tweeting about food trucks. When you run this code, you will be asked if you have a Google Maps API. Answer the prompt and then enter your API. <i>If you do not enter your API, the package will not look up geocoded tweets</i>.
 ```{r, chunk-five, echo=TRUE, eval=FALSE}
 GAfoodtruck <-search_tweets("#foodtruck", n = 1000, include_rts = FALSE, geocode = lookup_coords("georgia"))
 
 ```
-<i>This line of code is saying the same thing as above however this search is only happening within Georgia (geocode = lookup_coords("georgia")). You can do a search based on country, state, city, or city and state.</i>
-9. So what if you wanted to save your data elsewhere? You can create a csv file which will store your tweets. Let's try collecting some more tweets but using a different search term!
+<i>This line of code is saying the same thing as above however this search is only happening within Georgia (geocode = lookup_coords("georgia")). You can do a search based on country, state, city, or city and state.</i>. 
+
+13. So what if you wanted to save your data elsewhere? You can create a csv file which will store your tweets. Let's try collecting some more tweets but using a different search term!
 ```{r, chunk-six, echo = TRUE, eval = FALSE}
 save_as_csv(foodtrucktweets, file_name = "foodtrucktweets.csv", prepend_ids = TRUE, na = "", 
             fileEncoding = "UTF-8")
@@ -251,7 +268,7 @@ t<- 60 * 5
 ```{r, chunk-ten, echo = TRUE, eval = FALSE}
 foodtruckstream <- stream_tweets("food truck", timeout = t, file_name = "foodtrucktweets.json", parse = FALSE)
 ```
-<i>This chunk of code is saying to collect tweets happening in real-time about food trucks for five minutes. Please save this file in json format and name it foodtrucktweets and do not parse it to be read in R</i>.
+<i>This chunk of code is saying, "collect tweets happening in real-time about food trucks for five minutes. Please save this file in json format and name it foodtrucktweets and do not parse it to be read in R"</i>.
 
 8. Go ahead and take a peek at your JSON file! Go into the file location of your project and your JSON file should be there. You can open up the JSON file with any text editor. 
 
