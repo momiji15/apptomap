@@ -46,7 +46,7 @@ collect the information that you need. </i>
 
 
 ### Terms to Know
-<b>API</b>: Application Program Interface. A set of tools which allows you to build application software. For more information, click [here](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82).
+<b>API</b>: Application Program Interface. A set of tools which allows you to build applications. For more information, click [here](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82).
 
 ### Instructions
 #### Applying for a Twitter Developer Account
