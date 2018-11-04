@@ -182,6 +182,8 @@ twitter_token <- create_token(
 
 9.Once you do this, run your code! An external page will pop-up and ask you to authorize your app. Click "Authorize app" and there will be a message that says "Authentication complete. Please close this page and return to R."
 
+![](images/App4.JPG)
+
 10. Time to do a Twitter search! You want to get 1,000(n=1000) tweets about food trucks(#foodtruck), but you do not want to include retweets(include_rts = FALSE) Type:
 ```{r, chunk-four, echo=TRUE, eval=FALSE}
 foodtrucktweets <- search_tweets("#foodtruck", n = 1000, include_rts = FALSE)
