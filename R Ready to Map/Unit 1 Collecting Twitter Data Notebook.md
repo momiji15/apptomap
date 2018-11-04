@@ -259,7 +259,7 @@ limit to collect the tweets. This variable will be used in the timeout parameter
 
 `t <- 60 * 60 * 24 * 3` means to search for tweets for a period of three days.
 
-Do you have any ideas how to create a time limit of five minutes? Let's find out if you are right!
+For  ore information, please refer to the rtweet article on [Live streaming tweets](https://rtweet.info/articles/stream.html). Do you have any ideas how to create a time limit of five minutes? Let's find out if you are right!
 
 6. The anticipation to see if you are right is over. If you were thinking that `t <- 60 * 5` was the right answer, then you are correct! You win the satisifaction that you know you got the answer right and increased confidence in searching for tweets in real-time! Let's go ahead and assign this value to t.
 ```{r, chunk-nine, echo = TRUE, eval = FALSE}
@@ -277,7 +277,7 @@ foodtruckstream <- stream_tweets("food truck", timeout = t, file_name = "foodtru
 
 9. Actually, after taking a look at the JSON file(which can be an eyesore if you haven't really dealt  with JSON files), it might be a good idea to parse your tweets so you can read it in R. There are two ways you can do this. You can just omit the file_name and parse parameters. The parse parameter defaults to TRUE. Or, you can just change your JSON file into a data frame.
 ```{r, chunk-eleven, echo = TRUE, eval= FALSE}
-foodtruckparse <- parse_stream("foodtrucktweets.json")
+foodtruckparse <- parse_stream("ft_timed.json")
 ```
 
 10. In the data section of the RStudio IDE, click on "foodtruckparse" and you will see your information neatly arranged in a data frame!
