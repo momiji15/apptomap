@@ -259,7 +259,7 @@ limit to collect the tweets. This variable will be used in the timeout parameter
 
 `t <- 60 * 60 * 24 * 3` means to search for tweets for a period of three days.
 
-For  ore information, please refer to the rtweet article on [Live streaming tweets](https://rtweet.info/articles/stream.html). Do you have any ideas how to create a time limit of five minutes? Let's find out if you are right!
+For  ore information, please refer to the rtweet article on [live streaming tweets](https://rtweet.info/articles/stream.html). Do you have any ideas how to create a time limit of five minutes? Let's find out if you are right!
 
 6. The anticipation to see if you are right is over. If you were thinking that `t <- 60 * 5` was the right answer, then you are correct! You win the satisifaction that you know you got the answer right and increased confidence in searching for tweets in real-time! Let's go ahead and assign this value to t.
 ```{r, chunk-nine, echo = TRUE, eval = FALSE}
