@@ -223,7 +223,7 @@ ramen and bubble tea), so it’s time to work smarter and not harder. You decide
 ### Instructions
 1. If you already haven't done so, open up RStudio and create a new RScript. If you are continuing on from previous lessons, then go ahead and use the RScript you are using now!
 
-2. Set your working directory if you haven't done so. You can do that two ways. Do you remember which ways you can set your working directory? If not, refer to the "Getting Started" notebook to refresh your memory.
+2. Set your working directory if you haven't done so. You can do that two ways. Do you remember which ways you can set your working directory? If not, refer to the "Getting Started" section or Lesson 3 to refresh your memory.
 
 3. If you haven't already, make sure to install and load the rtweet package. If you forgot how to do that, feel free to scroll up to the previous lesson!
 
