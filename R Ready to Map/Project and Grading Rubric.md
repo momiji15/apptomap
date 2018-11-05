@@ -32,6 +32,8 @@ output: html_document
   10. Presentation flow(making sure the presentation is cohesive and all members taking a part). <b>10 points</b>
   
 Make sure to publish your R Markdown presentation and R Markdown document on RPubs. You can attach a link to your documents in a Word document and submit them to ELC. Only one person per group needs to submit a link. Make sure to put the name of your team members on your Word document, R Markdown presention, and R Markdown document. Points will be taken off you fail to do this!
+
+<b> Everyone must do their fair share of work</b>. Of course, there will be a delegation of tasks, but it is expected that all students participate in creating the deliverables(R Markdown Presentation and Document) and doing the presentation.
   
 ### Total Points: 100
 
