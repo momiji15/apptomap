@@ -43,4 +43,4 @@ By doing this we will be able to run your code on our machines and see what's go
 ![](images/reprex2.JPG)
 
 # Sources
-Bryan, J., Hester, J., Robinson, D., & Wickham, H. Reprex.
+Bryan, J., Hester, J., Robinson, D., & Wickham, H. Reprex (2018). https://cloud.r-project.org/web/packages/reprex/index.html
