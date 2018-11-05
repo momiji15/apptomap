@@ -39,5 +39,5 @@ see a message that says "Rendered reprex is on the clipboard." You should also s
 
 ### 4. Paste the code into your e-mail and then you're read to go! It should look like this!
 
-By doing this, I or your friends will be able to run your code on our machines! 
+By doing this we will be able to run your code on our machines and see what's going on! 
 ![](images/reprex2.JPG)
