@@ -41,3 +41,6 @@ see a message that says "Rendered reprex is on the clipboard." You should also s
 
 By doing this we will be able to run your code on our machines and see what's going on! 
 ![](images/reprex2.JPG)
+
+# Sources
+Bryan, J., Hester, J., Robinson, D., & Wickham, H. Reprex.
