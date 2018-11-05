@@ -43,4 +43,8 @@ By doing this we will be able to run your code on our machines and see what's go
 ![](images/reprex2.JPG)
 
 # Sources
-Bryan, J., Hester, J., Robinson, D., & Wickham, H. Reprex package, version 0.2.1 (2018). https://cloud.r-project.org/web/packages/reprex/index.html
+1. Bryan, J., Hester, J., Robinson, D., & Wickham, H. (2018a). Reprex package, version 0.2.1. Retrieved from https://cloud.r-project.org/web/packages/reprex/index.html
+
+2. Bryan, J., Hester, J., Robinson, D., & Wickham, H. (2018b) Reprex. Retrieved from https://reprex.tidyverse.org/index.html.
+
+3. Bryan, J., Hester, J., Robinson, D., & Wickham, H. (2018c). Reprex do's and don'ts. Retrieved from https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html
