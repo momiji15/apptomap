@@ -35,8 +35,9 @@ You should see a message that says the the reprex is rendering and then a messag
 If you are getting a message that says "No input is provided and clipboard not available" then try installing the reprex 
 package directly from the GitHub and install the associated files when prompted to do so. If it works, then you should 
 see a message that says "Rendered reprex is on the clipboard." You should also see the your reprex rendered in your RStudio Viewer.
+![](images/reprex1.JPG)
 
 ### 4. Paste the code into your e-mail and then you're read to go! It should look like this!
 
 By doing this, I or your friends will be able to run your code on our machines! 
-
+![](images/reprex2.JPG)
