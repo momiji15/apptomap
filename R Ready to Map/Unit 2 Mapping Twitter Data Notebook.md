@@ -15,7 +15,7 @@ One thing worth mentioning is that Leaflet uses the magrittr pipe operator (%>%)
 ### Scenario
 <i>You finally have enough Twitter data to show some results to your investor. Your investor just called and asked for you to provide a map to see where people are tweeting about the competitors with your preliminary report. You want to make a Leaflet map since it’s interactive and provides a good visualization for your data.</i>
 
-###Terms to Know
+### Terms to Know
 <b>leaflet</b>: A JavaScript package in which you can create interactive maps.
 
 <b>magrittr</b>: An R package that uses operators that makes code more readable.
