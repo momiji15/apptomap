@@ -15,7 +15,6 @@ You have many options when it comes to creating R Markdown documents such as cre
 
 To see what this notebook looks like as a published R Markdown document on RPubs, [click here](http://rpubs.com/momiji15/376038).
 
-
 ![](images/Rmarkdown2.jpg)
 
 Make sure to install R Markdown along with the packages that is needed to R Markdown(known as dependencies) before making your R Markdown document.
@@ -30,7 +29,7 @@ library(rmarkdown)
 
 ### Terms to Know
 
-<b>rmarkdown</b>: An authoring framework which allows you to create a variety of documents such as presentations, webpages, and html documents.
+<b>R Markdown</b>: An authoring framework which allows you to create a variety of documents such as presentations, webpages, and html documents.
 
 <b>YAML</b>: Stands for "YAML Ain't Markup Language". YAML is a user-friendly and readable data serialization language 
 for a variety of programming languages.
@@ -41,10 +40,11 @@ for a variety of programming languages.
 ## Lesson 2: Making an R Markdown Document
 Let's make an R Markdown Document! Let's start out making a document which have some headers and italicized text. Before we do that, we need to open up an R Markdown document! Go to File -> New File -> R Markdown to open an R Markdown document. Fill in the information in the "title" and "author" fields and keep the default output format to HTML. I ended up naming  my document "Food Truck Report for Investors". Clear everything in the document with two exceptions:
 
-  1. The code chunk which includes: `knitr::opts_chunk$set(echo = FALSE)`.
+  1. The code chunk which includes: `knitr::opts_chunk$set(echo = TRUE)`. 
   2. The YAML data which is delinated by an `---`.
 
-
+Change echo to FALSE. By doing this, you will not be seeing your actual code in the document. Reasons it would be set TRUE if you are 
+wanting others to see your code.
 
 ![](images/newmarkdown.jpg)
 
@@ -66,7 +66,7 @@ R Markdown has different types of headers. Here are some of the headers with the
 
 ...and so on. See a pattern? 
 
-Add four Header 1 titles of the sections in your document and click the Knit button on the left-hand corner of your text editior interface to see what your headers look like. The Knit button renders a document from the R Markdown format to HTML. Make sure that you save your document! Save your document as foodtruckreport.rmd.
+Add four Header 1 titles of the sections(Introduction, Map, Preliminary Analysis, Conclusion) in your document and click the Knit button on the left-hand corner of your text editior interface to see what your headers look like.  The Knit button renders a document from the R Markdown format to HTML. Make sure that you save your document! Save your document as foodtruckreport.rmd.
 
 
 Let's add some filler text beneath the headers. All you have to do is simply type below the headers!
@@ -96,8 +96,8 @@ Remember in Unit 1 when we plotted the frequency of tweets about food trucks? We
 
   - "r" designates the language in which the code chunk will run in. R Notebooks are able to run code chunks in other 
      languages such as python.
-  - "chunk-one" designates the name of the code chunk. You can name it anything.
-  - "echo = TRUE" means that the actual code will display in your document.
+  - "chunk-two" designates the name of the code chunk. You can name it anything.
+  - As mentioned previously, "echo = TRUE" means that the actual code will display in your document.
   - "eval = FALSE" means that the code will not automatically run in the document. If you want to change this, change
      the value to TRUE.
 
