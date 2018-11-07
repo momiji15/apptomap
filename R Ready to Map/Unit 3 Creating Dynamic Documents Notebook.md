@@ -115,7 +115,7 @@ save_as_csv(ft_latlong, file_name = "foodtrucktweets.csv", prepend_ids = TRUE, n
             fileEncoding = "UTF-8")
 
 ```
-The csv file that you will actually be using is one named "foodtrucktweets.tweets.csv". The rtweets package divides the csv file into a file for users("foodtrucktweets.users.csv") and one for the tweets. Make sure to do this in your code from Unit 1 and not within the R Markdown document you are creating.
+The csv file that you will actually be using is one named "foodtrucktweets.tweets.csv". The rtweets package divides the csv file into a file for users("foodtrucktweets.users.csv") and one for the tweets("foodtrucktweets.tweets.csv"). Make sure to do this in your code from Unit 1 and not within the R Markdown document you are creating.
 
 
 Let's load the twitter data csv file into a data frame. This can be done by using the read.csv() function.  
