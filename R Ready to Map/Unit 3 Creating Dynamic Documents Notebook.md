@@ -2,8 +2,8 @@
 # R Ready to Map Unit 3: Using Interactive Documents
 
 ## Unit Learning Objectives
-- To have a basic understanding RMarkdown framework
-- To learn how to create a simple RMarkdown document.
+- To have a basic understanding R Markdown framework
+- To learn how to create a simple R Markdown document.
 - To learn how to create an R Markdown presentation.
 
 
