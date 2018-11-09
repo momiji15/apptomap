@@ -27,6 +27,8 @@ One thing worth mentioning is that Leaflet uses the magrittr pipe operator (%>%)
             
 Let's get mapping! Before you start mapping, let's find tweets that have geotagged information and create variables for latitude and longitude which can be used by the Leaflet package. Let's map the Twitter information about food trucks that was assigned to the foodtrucktweets variable in Unit 1 and assign it to a new variable named ft.
 
+<i>Note: If you are loading a csv into RStudio, you need to use yourfilename.tweets.csv. Do not combine the .users.csv and .tweets. csv files into a csv!</i>
+
 ```{r, chunk-one, echo=TRUE, eval=FALSE}
 ft <- lat_lng(foodtrucktweets)
 ```
