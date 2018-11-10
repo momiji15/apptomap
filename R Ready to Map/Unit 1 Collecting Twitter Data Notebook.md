@@ -194,15 +194,17 @@ foodtrucktweets <- search_tweets("#foodtruck", n = 1000, include_rts = FALSE)
 ![](images/tweets.JPG)
 
 12. Like your uncle requested, you need to collect food truck related tweets in the areas you will have your food truck. You decide you want to check out what areas in Georgia are tweeting about food trucks. When you run this code, you will be asked if you have a Google Maps API. Answer the prompt and then enter your API. <i>If you do not enter your API, the package will not look up geocoded tweets</i>.
+Let's also look for geotagged tweets all over the US because you might decide to hit the road and go to other states!
 ```{r, chunk-five, echo=TRUE, eval=FALSE}
 GAfoodtruck <-search_tweets("#foodtruck", n = 1000, include_rts = FALSE, geocode = lookup_coords("georgia"))
+USfoodtruck <-search_tweets("foodtruck, n = 1000, include_rts = FALSE, geocode = lookup_coords("usa"))
 
 ```
-<i>This line of code is saying the same thing as above however this search is only happening within Georgia (geocode = lookup_coords("georgia")). You can do a search based on country, state, city, or city and state.</i>. 
+<i>This line of code is saying the same thing as above however the first search is only happening within Georgia (geocode = lookup_coords("georgia")) while the second search is happening within the US (geocode = lookup_coords("usa")). You can do a search based on country, state, city, or city and state.</i>. 
 
-13. Now you need to add lats and longs to your tweets. <i>Please make sure to do this before doing the next step.</i>. 
+13. Now you need to add lats and longs to the tweets you collected for all tweets that have coordinates in the US. <i>Please make sure to do this before doing the next step.</i>. 
 ```{r, chunk-one, echo=TRUE, eval=FALSE}
-ft <- lat_lng(foodtrucktweets)
+foodtrucktweets <- lat_lng(USfoodtruck)
 ```
 
 Feel free to also try this with the GAfoodtruck variable.
@@ -262,9 +264,9 @@ limit to collect the tweets. This variable will be used in the timeout parameter
 
 `t <- 30` means to search for tweets for 30 seconds.
 
-`t <- 60 * 3` means to search for tweets for three minutes.
+`t <- 3 * 60` means to search for tweets for three minutes.
 
-`t <- 60 * 60 * 24` means to search for tweets for a period of one day.
+`t <- 24 * 60 * 60` means to search for tweets for a period of one day.
 
 `t <- 60 * 60 * 24 * 3` means to search for tweets for a period of three days.
 
@@ -290,6 +292,8 @@ foodtruckparse <- parse_stream("ft_timed.json")
 ```
 
 10. In the data section of the RStudio IDE, click on "foodtruckparse" and you will see your information neatly arranged in a data frame!
+
+11. Make sure 
 
 ## Lesson 4: It's Your Turn!
 
