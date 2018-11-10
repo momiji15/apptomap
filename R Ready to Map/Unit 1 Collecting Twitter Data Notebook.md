@@ -200,12 +200,16 @@ GAfoodtruck <-search_tweets("#foodtruck", n = 1000, include_rts = FALSE, geocode
 ```
 <i>This line of code is saying the same thing as above however this search is only happening within Georgia (geocode = lookup_coords("georgia")). You can do a search based on country, state, city, or city and state.</i>. 
 
-13. So what if you wanted to save your data elsewhere? You can create a csv file which will store your tweets. Let's try collecting some more tweets but using a different search term!
+13. Now you need to add lats and longs to your tweets. <i>Please make sure to do this before doing the next step.</i>. 
+
+
+14. So what if you wanted to save your data elsewhere? You can create a csv file which will store your tweets. Let's try collecting some more tweets but using a different search term!
 ```{r, chunk-six, echo = TRUE, eval = FALSE}
 save_as_csv(foodtrucktweets, file_name = "foodtrucktweets.csv", prepend_ids = TRUE, na = "", 
             fileEncoding = "UTF-8")
 ```
 <i>This line of code means that you are saving your foodtrucktweets variable as foodtruckstweets.csv, and you want to put an x next to all the Twitter IDs(prepend_ids=TRUE). For any missing data, you want to put an empty character in the cell (na = ""). Also, you want to encode the file to "UTF-8".</i>
+
 
 <b>Congratulations! You did your first Twitter search using the rtweet package!</b>
 
