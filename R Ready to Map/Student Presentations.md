@@ -31,9 +31,11 @@
 ### Sports Comparison Group
 [Sports Comparison Slides](http://rpubs.com/sngobt/pres3majorsports)
 
+[Sports Comparison Map](http://rpubs.com/sngobt/mstc)
+
 [Sports Comparison Document]()
 
 ### UGA Football
-[UGA Football Slides]()
+[UGA Football Slides](http://rpubs.com/Emad_A/439155)
 
-[UGA Football Document]()
+[UGA Football Document](http://rpubs.com/Emad_A/439161)
