@@ -1,4 +1,4 @@
-# Presentations and Documents: Spring 2018
+# Student Presentations and Reports: Spring 2018
 
 ## Allergy Group
 [Allergy Season Slides](http://rpubs.com/xtianpedraza/allergyseasonslides)
